@@ -50,7 +50,7 @@ h2{
     justify-content:space-between;
     padding:20px 60px 20px 40px;
 }
-input{
+.searchCountry{
     padding: 10px;
     width:300px;
     font-size: 15px;
@@ -65,22 +65,10 @@ input{
     padding-bottom:20px;
 }
 
-.columnView{
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-    padding:20px;
-    width:auto;
-}
-.columnView img{
-    height: 500px;
-    width:400px;
-}
 #continent{
     height: 45px;
     width:180px;
-    padding:10px;
+    padding:20px;
 }
 h2{
     text-align:left;
@@ -94,8 +82,23 @@ p{
 .hidden{
     display: none;
 }
-
+.btnn .btn{
+    padding: 6px;
+    width:150px;
+    font-size: 15px;
+    color:  hsl(0, 0%, 52%);
+}
 @media only screen and (max-width: 500px){
+    .search{
+        flex-direction: column;
+        justify-content: center;
+        text-align:left;
+    }
+
+    .selectContinent{
+        margin-top:20px;
+        width: 200px;
+    }
     #top{
         display: grid;
         grid-template-columns: auto;
@@ -111,7 +114,7 @@ p{
         width:100%;
         height:200px;
     }
-    input{
+    .searchCountry{
         padding: 4px;
         width:140px;
         font-size: 12px;
@@ -161,7 +164,7 @@ p{
         width:100%;
         height:130px;
     }
-    input{
+    .searchCountry{
         padding: 4px;
         width:150px;
         font-size: 12px;
@@ -206,7 +209,7 @@ p{
         width:100%;
         height:120px;
     }
-    input{
+    .searchCountry{
         padding: 6px;
         width:200px;
         font-size: 14px;
@@ -256,7 +259,7 @@ p{
         width:100%;
         height:150px;
     }
-    input{
+    .searchCountry{
         padding: 8px;
         width:240px;
         font-size: 15px;
